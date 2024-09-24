@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Mot"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Scroll View to allow for scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- ImageView for Header -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/topbar"
+                android:layout_marginTop="-36dp" />
+            <!-- TextView for Title-->
+            <TextView
+                android:id="@+id/mainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Mot History:"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+
+                />
+            <!-- TextView for Regestration Number -->
+            <TextView
+                android:id="@+id/regnum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:background="@drawable/border"
+                android:layout_margin="15dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <!-- TextView for RoadTax Expiry -->
+            <TextView
+                android:id="@+id/roadtaxexp"
+                android:text="Road Tax Expiry Date: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- TextView for Mot Expire -->
+            <TextView
+                android:id="@+id/motexpire"
+                android:text="Mot Expiry Date: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for Recent Mot -->
+            <TextView
+                android:id="@+id/recentmot"
+                android:text="Recent Mot: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for Result -->
+            <TextView
+                android:id="@+id/result"
+                android:text="Result: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- TextView for Mileage/Mileage Increase -->
+            <TextView
+                android:id="@+id/mileage"
+                android:text="Mileage: Mileage Increase: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for Mileage anomaly -->
+            <TextView
+                android:id="@+id/milageanomaly"
+                android:text="Mileage Anomaly: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- TextView advisories/fail reason -->
+            <TextView
+                android:id="@+id/advisories"
+                android:text="Advisories/Fail Reason: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- Button to go back to previous Activity -->
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/customBlue"
+                android:padding="16dp"
+                android:text="Back"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Login Text View -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Login"
+        android:textSize="48sp"
+        android:gravity="center"/>
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Username"
+        android:inputType="text" />
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Login"
+        android:backgroundTint="@color/customBlue"
+        />
+    <!-- Text View for Register an account-->
+    <TextView
+        android:id="@+id/textViewreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register an Account, Click here"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

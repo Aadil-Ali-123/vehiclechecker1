@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".History">
+    <!-- Scroll View to allow for the Page to Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- ImageView For Header -->
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:padding="0dp"
+                    app:srcCompat="@drawable/topbar"
+                    android:layout_marginTop="-36dp"
+                    />
+            <!-- Title TextView -->
+                <TextView
+                    android:id="@+id/mainTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Vehicle History"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+
+                    />
+            <!-- Regestration TextView -->
+                <TextView
+                    android:id="@+id/regnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawablePadding="5dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textSize="23dp"
+                    android:background="@drawable/border"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+
+                    />
+
+            <!-- TextView for Owners count -->
+                <TextView
+                    android:id="@+id/owners"
+                    android:text="Owners Count: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+            <!-- TextView for Previous Accidents -->
+                <TextView
+                    android:id="@+id/prevaccident"
+                    android:text="Previous Accident: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+            <!-- TextView for Finance -->
+                <TextView
+                    android:id="@+id/finance"
+                    android:text="Outstanding Finance: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+            <!-- TextView for Stolen -->
+                <TextView
+                    android:id="@+id/stolen"
+                    android:text="Stolen: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+            <!-- TextView for Imported -->
+                <TextView
+                    android:id="@+id/imported"
+                    android:text="Imported: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+            <!-- TextView for Hpi Clear -->
+                <TextView
+                    android:id="@+id/hpi"
+                    android:text="HPI Clear: "
+                    android:padding="7dp"
+                    android:textSize="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:background="@drawable/bottomshadow"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"/>
+
+            <!-- Button to go Back to previous activity -->
+                <Button
+                    android:id="@+id/backbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="16dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/customBlue"
+                    android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "224928571819",
+    "firebase_url": "https://vehiclehealthchecker-default-rtdb.firebaseio.com",
+    "project_id": "vehiclehealthchecker",
+    "storage_bucket": "vehiclehealthchecker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224928571819:android:2e13a17a2574829c51f2ee",
+        "android_client_info": {
+          "package_name": "com.example.vehiclechecker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB36YeybW6jdQiw40M96NuAg1UNiGw3AOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224928571819:android:6f11756e5e9eda5b51f2ee",
+        "android_client_info": {
+          "package_name": "com.example.vehiclehealthchecker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB36YeybW6jdQiw40M96NuAg1UNiGw3AOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

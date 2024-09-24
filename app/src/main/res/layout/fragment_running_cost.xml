@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:columnCount="1"
+    android:rowCount="12"
+    android:background="@color/design_default_color_background">
+    <!-- Scroll View to allow for Scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="1"
+            android:rowCount="12">
+            <!-- Image View for Header -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/topbar"
+                android:layout_marginTop="-36dp" />
+            <!-- TextView for Title-->
+            <TextView
+                android:id="@+id/mainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Running Costs"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+
+                />
+            <!-- TextView for Regestration Number -->
+            <TextView
+                android:id="@+id/regnum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:background="@drawable/border"
+                android:layout_margin="15dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+
+                />
+            <!-- TextView for Fuel Tank -->
+            <TextView
+                android:id="@+id/fueltank"
+                android:text="Fuel Tank Size(Litres): "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for Fuel Range -->
+            <TextView
+                android:id="@+id/fuelrange"
+                android:text="Range(Miles): "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for CO2 Emissions -->
+            <TextView
+                android:id="@+id/co2emissions"
+                android:text="CO2 Emissions: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for CO2 Rating -->
+            <TextView
+                android:id="@+id/band"
+                android:text="CO2 Rating: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for MPG-->
+            <TextView
+                android:id="@+id/mpg"
+                android:text="MPG "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for Fuel Cost 100 Miles -->
+            <TextView
+                android:id="@+id/fuelcost"
+                android:text="Fuel Cost for 100miles: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for 6month Cost OF RoadTax -->
+            <TextView
+                android:id="@+id/roadtax6"
+                android:text="Road Tax 6 Month: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+            <!-- TextView for 12 Month Cost of RoadTax -->
+            <TextView
+                android:id="@+id/roadtax12"
+                android:text="Road Tax 12 Month: "
+                android:padding="7dp"
+                android:textSize="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:background="@drawable/bottomshadow"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp" />
+
+            <!-- Back Button to go to previous Activity -->
+            <Button
+                android:id="@+id/backbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/customBlue"
+                android:padding="16dp"
+                android:text="Back"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </GridLayout>
+    </ScrollView>
+</GridLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Home  Item -->
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        android:visible="true"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        />
+    <!-- Fuel  Item -->
+    <item
+        android:id="@+id/fuel"
+        android:icon="@drawable/fuel_svgrepo_com"
+        android:title="Fuel"
+        android:visible="true"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"/>
+    <!-- Garage Item -->
+    <item
+        android:id="@+id/garage"
+        android:icon="@drawable/home_garage_svgrepo_com__1_"
+        android:title="Garage"
+        android:visible="true"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"/>
+    <!-- Profile Item -->
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_circle_svgrepo_com"
+        android:title="Profile"
+        android:visible="true"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"/>
+</menu>

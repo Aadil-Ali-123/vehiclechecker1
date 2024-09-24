@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".Garage">
+    <!-- ScrollView to allow for Scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- ImageView for Header -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="-36dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/topbar" />
+            <!-- ImageView for Profile Icon -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:src="@drawable/profile_circle_svgrepo_com" />
+            <!-- TextView for Email -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="34sp"
+                android:textAlignment="center" />
+            <!-- Button For Login -->
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/customBlue"
+                android:textStyle="bold" />
+
+            <!-- Button For Register -->
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/customBlue"
+                android:textStyle="bold" />
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/customBlue"
+                android:textStyle="bold" />
+            <!-- ListView Container to hold the data of users monitoring Vehicles -->
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scrollbarStyle="outsideOverlay" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

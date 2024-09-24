@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home">
+
+    <!-- Scroll View to allow for scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Image View for Header-->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/topbar"
+                android:layout_marginTop="-36dp" />
+
+            <!-- TextView for Title -->
+            <TextView
+                android:id="@+id/mainTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Enter Vehicle Registration Number:"
+                android:textSize="30dp"
+                android:layout_below="@+id/imageView2" />
+
+            <!-- EditText For User To Input Registration Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/mainTextView"
+                android:id="@+id/reginput">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Vehicle Regestration:"
+                    android:drawablePadding="10dp"
+                    android:padding="16dp"
+                    android:layout_below="@+id/mainTextView">
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Vehicle Specification Button -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Specification"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/reginput"
+                android:backgroundTint="@color/customBlue" />
+
+            <!-- Running Costs Button -->
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Running Costs"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/button"
+                android:backgroundTint="@color/customBlue" />
+            <!-- Vehicle History Button -->
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle History"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/button2"
+                android:backgroundTint="@color/customBlue" />
+            <!-- Mot History Button -->
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mot History"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/button3"
+                android:backgroundTint="@color/customBlue" />
+            <!-- Performance Button -->
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Performance"
+                android:layout_marginTop="10dp"
+                android:padding="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@+id/button4"
+                android:backgroundTint="@color/customBlue" />
+            <!-- Montior Schedule Button -->
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button5"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/customBlue"
+                android:padding="16dp"
+                android:text="Add to Monitor Schedule" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
